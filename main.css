@@ -19,4 +19,43 @@ button {
 .dropdownMenu {
     list-style: none;
     margin: 0;
+    position: absolute;
+    padding: 0;
+    text-align: center;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 50px;
+    width: 150px;
+    box-shadow: 10px 7px 112px -4px rgba(88,98,204,0.71);
+    transform: translateY(-100%);
+    transition: .5s ease-in-out;
+}
+
+.dropdownLink {
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 15px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dropdownLink:hover {
+    color: #f9f9f9;
+    background-color: #4a4a4f;
+}
+
+.dropdown {
+    width: 150px;
+    position: relative;
+}
+
+.dropdown:hover button {
+    background-color: #018ec5;
+}
+
+.dropdown:hover .dropdownMenu {
+    transform: translateY(0);
+    
 }
